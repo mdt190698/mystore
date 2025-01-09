@@ -1,8 +1,36 @@
-<%= image_tag @product.featured_image if @product.featured_image.attached? %>
-<%= render "inventory", product: @product %>
+<div class="custom-container">
+  <div class="custom-box">
+    <div class="custom-layout">
+      <div class="custom-image-wrapper">
+        <% if @product.featured_image.attached? %>
+          <%= image_tag @product.featured_image, class: "custom-image" %>
+        <% end %>
+      </div>
 
-<h1><%= @product.name %></h1>
-<%= @product.description %>
-<%= link_to "Back", products_path %>
-<%= link_to "Edit", edit_product_path(@product) %>
-<%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+      <div class="custom-details">
+        <h1 class="custom-product-title"><%= @product.name %></h1>
+
+        <div class="custom-info-section">
+          <h5 class="custom-section-title">Description</h5>
+          <p class="custom-description"><%= @product.description %></p>
+        </div>
+
+        <div class="custom-info-section">
+          <h5 class="custom-section-title">Inventory</h5>
+          <p class="custom-inventory"><%= render "inventory", product: @product %></p>
+        </div>
+
+        <div class="custom-buttons">
+          <!-- Nút Edit -->
+          <%= button_to "Edit", edit_product_path(@product), method: :get, class: "custom-button custom-edit-button" %>
+          
+          <!-- Nút Delete -->
+          <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "custom-button custom-delete-button" %>
+
+          <!-- Nút Back, nằm kế bên Nút Delete -->
+          <%= link_to "Back", products_path, class: "custom-button custom-back-button" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

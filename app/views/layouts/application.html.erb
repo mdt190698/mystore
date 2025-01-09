@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Mystore" %></title>
+    <title><%= content_for(:title) || "MyStore" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -23,15 +23,53 @@
   </head>
 
   <body>
-  <% if !user_signed_in? %>
-    <p class="sign_in"><%= link_to "Login", new_user_session_path %></p>
-    <% end %>
+  <nav class="navbar">
     <% if user_signed_in? %>
-    <%= button_to "Đăng xuất", destroy_user_session_path, method: :delete %>
+      <%= button_to "Đăng xuất", destroy_user_session_path, method: :delete, class: "nav-item btn-logout" %>
+    <% else %>
+      <%= link_to "Login", new_user_session_path, class: "nav-item" %>
     <% end %>
-    <%= link_to "Home", root_path%>
+    <%= link_to "Home", root_path, class: "nav-item" %>
+  </nav>
+  <main>
+  
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
-  </body>
+  </main>
+</body>
+<footer class="minimal-footer">
+    <div class="footer-content">
+      <div class="logo-section">
+        <h2>logo</h2>
+        <p>Simple Page.</p>
+      </div>
+      <div class="footer-column">
+      <h4>About Us</h4>
+
+      <li><a href="/about">Our Story</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/careers">Careers</a></li>
+
+      </div>
+
+      <div class="social-section">
+      <h4>Follow Us</h4>
+      <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </div>
+
+      <div class="footer-column">
+      <h4>Support</h4>
+
+        <li><a href="/help">Help Center</a></li>
+        <li><a href="/faq">FAQs</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Your Company. All rights reserved. | <a href="/privacy">Privacy Policy.</p>
+    </div>
+  </footer>
 </html>
