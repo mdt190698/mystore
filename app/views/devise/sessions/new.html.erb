@@ -4,11 +4,11 @@
     <form action="<%= session_path(resource_name) %>" method="post">
       <div class="input-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="user[email]" required autofocus autocomplete="email">
+        <input type="email" id="email" name="user[email]" placeholder="Nhập email của bạn" required autofocus autocomplete="email">
       </div>
       <div class="input-group">
         <label for="password">Password</label>
-        <input type="password" id="password" name="user[password]" required autocomplete="current-password">
+        <input type="password" id="password" name="user[password]" placeholder="Nhập mật khẩu của bạn" required autocomplete="current-password">
       </div>
       <% if devise_mapping.rememberable? %>
         <div class="checkbox-group">
