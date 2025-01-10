@@ -14,7 +14,7 @@
   align-items: center;
   min-height: calc(100vh - 50px); /* Điều chỉnh chiều cao trừ đi thanh nav */
   padding: 20px;
-  background-color: #e9eff1; /* Màu nền nhẹ hơn */
+  /* Màu nền nhẹ hơn */
 }
 
 .login-box {
