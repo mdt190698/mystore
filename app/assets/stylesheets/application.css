@@ -201,7 +201,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('3.jpg'); /* Đặt hình nền liên quan đến ô tô */
+  background-image: url('4.jpg'); /* Đặt hình nền liên quan đến ô tô */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Hình nền cố định khi cuộn */
