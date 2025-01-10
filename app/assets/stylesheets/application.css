@@ -843,11 +843,11 @@ main {
 .form-submit {
   background-color: #007bff; /* Màu nền nút */
   color: #fff; /* Màu chữ nút */
-  padding: 8px 16px; /* Giảm khoảng cách bên trong */
+  padding: 12px 25px; /* Giảm khoảng cách bên trong */
   font-size: 14px; /* Giảm kích thước chữ */
   font-weight: bold; /* Chữ đậm */
   border: none; /* Không có đường viền */
-  border-radius: 5px; /* Bo góc ít hơn */
+  border-radius: 8px; /* Bo góc ít hơn */
   cursor: pointer; /* Con trỏ khi hover */
   transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
 }
