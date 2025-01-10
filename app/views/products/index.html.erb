@@ -1,5 +1,5 @@
-<h1><%= t ".title" %></h1>
-<h1 class="page-title">Products</h1>
+
+<h1 class="page-title"><%=t ".title" %></h1>
 <% if user_signed_in? %>
   <div class="action-links">
     <%= link_to "New product", new_product_path, class: "btn btn-primary" %>
