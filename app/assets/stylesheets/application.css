@@ -127,10 +127,8 @@
 }
 
 /* Placeholder Styling */
-.input-group input::placeholder {
-  color: #aaa; /* Màu chữ placeholder */
-  font-style: italic; /* Kiểu chữ nghiêng */
-}
+
+
 
 /* Styling for the remember me checkbox */
 .checkbox-group {
@@ -201,7 +199,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('4.jpg'); /* Đặt hình nền liên quan đến ô tô */
+  background-image: url('5.jpg'); /* Đặt hình nền liên quan đến ô tô */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Hình nền cố định khi cuộn */
@@ -309,7 +307,7 @@ main {
 #products {
   display: flex; /* Sử dụng flexbox để sắp xếp các sản phẩm */
   flex-wrap: wrap; /* Cho phép các sản phẩm xuống dòng */
-  justify-content: space-between; /* Căn giữa các sản phẩm với khoảng cách đều */
+  justify-content: center; /* Căn giữa các sản phẩm với khoảng cách đều */
   padding: 10px; /* Thêm khoảng cách bên trong cho danh sách sản phẩm */
   background-color: white; /* Màu nền nhẹ nhàng cho danh sách sản phẩm */
 }

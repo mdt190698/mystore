@@ -6,13 +6,13 @@
       <!-- Name Field -->
       <div class="form-group">
         <%= form.label :name, class: "form-label" %>
-        <%= form.text_field :name, class: "form-input" %>
+        <%= form.text_field :name, placeholder: "Nhập tên sản phẩm", class: "form-input" %>
       </div>
 
       <!-- Description Field -->
       <div class="form-group">
         <%= form.label :description, class: "form-label" %>
-        <%= form.rich_text_area :description, class: "form-textarea" %>
+        <%= form.rich_text_area :description, placeholder: "Nhập mô tả sản phẩm", class: "form-textarea" %>
       </div>
 
       <!-- Featured Image Field -->
@@ -24,7 +24,7 @@
       <!-- Inventory Count Field -->
       <div class="form-group">
         <%= form.label :inventory_count, class: "form-label" %>
-        <%= form.number_field :inventory_count, class: "form-input" %>
+        <%= form.number_field :inventory_count, placeholder: "Nhập số lượng sản phẩm", class: "form-input" %>
       </div>
 
       <!-- Submit and Cancel Buttons -->
