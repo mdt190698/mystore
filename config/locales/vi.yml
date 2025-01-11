@@ -1,0 +1,5 @@
+vi:
+  hello: "Chào các con vợ"
+  products:
+    index:
+      title: "Sản phẩm"
